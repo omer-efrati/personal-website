@@ -24,18 +24,23 @@ a {
 }
 
 /* Hero Section */
+@media only screen and (min-width: 1366px) {
+  #hero {
+    background-image: url("./assets/img/background-hero-w1920px.png");
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+  #hero {
+    background-image: url("./assets/img/background-hero-w1366px.png");
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #hero {
+    background-image: url("./assets/img/background-hero-w1200px-h800px.png");
+  }
+}
+
 #hero {
-  background-image: url("./assets/img/background-hero-72dpi.png");
-  background-image: image-set(
-    url("./assets/img/background-hero-72dpi.png") 72dpi,
-    url("./assets/img/background-hero-150dpi.png") 150dpi,
-    url("./assets/img/background-hero-300dpi.png") 300dpi
-  );
-  background-image: -webkit-image-set(
-    url("./assets/img/background-hero-72dpi.png") 72dpi,
-    url("./assets/img/background-hero-150dpi.png") 150dpi,
-    url("./assets/img/background-hero-300dpi.png") 300dpi
-  );
   background-size: cover;
   background-position: top center;
   position: relative;
